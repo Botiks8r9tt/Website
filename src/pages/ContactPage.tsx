@@ -58,7 +58,7 @@ export default function ContactPage() {
         <ContactItem
           icon={Mail}
           label="Email"
-          value="your.email@example.com"
+          value="danyascp173@gmail.com"
           href="mailto:your.email@example.com"
         />
 

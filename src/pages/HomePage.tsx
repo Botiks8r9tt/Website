@@ -1,5 +1,3 @@
-import { ArrowRight } from 'lucide-react';
-
 export default function HomePage() {
   return (
     <div className="flex flex-col justify-center min-h-[500px]">
@@ -25,13 +23,6 @@ export default function HomePage() {
           elevator pitch that captures your professional essence and what makes
           you unique in your field.
         </p>
-
-        <div className="flex gap-4 pt-4">
-          <button className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-lg shadow-blue-600/30">
-            Learn More
-            <ArrowRight className="w-4 h-4" />
-          </button>
-        </div>
       </div>
     </div>
   );

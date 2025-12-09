@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin, Github, Globe } from 'lucide-react';
+import { Mail, Phone, MapPin, Github } from 'lucide-react';
 
 interface ContactItemProps {
   icon: React.ElementType;
@@ -76,24 +76,10 @@ export default function ContactPage() {
         />
 
         <ContactItem
-          icon={Linkedin}
-          label="LinkedIn"
-          value="linkedin.com/in/yourprofile"
-          href="https://linkedin.com/in/yourprofile"
-        />
-
-        <ContactItem
           icon={Github}
           label="GitHub"
           value="github.com/yourusername"
           href="https://github.com/yourusername"
-        />
-
-        <ContactItem
-          icon={Globe}
-          label="Website"
-          value="www.yourwebsite.com"
-          href="https://www.yourwebsite.com"
         />
       </div>
 

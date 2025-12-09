@@ -46,9 +46,7 @@ export default function ExperiencePage() {
       role: "Current Position",
       period: "2023 - Present",
       description: [
-        "Key responsibility or achievement in your current role",
-        "Another important contribution or project you've led",
-        "Technical skills or leadership qualities demonstrated"
+        "Key responsibility or achievement in your current role"
       ],
       isLatest: true
     },
@@ -57,9 +55,7 @@ export default function ExperiencePage() {
       role: "Previous Position",
       period: "2020 - 2023",
       description: [
-        "Major project or responsibility in this role",
-        "Skills developed or achievements earned",
-        "Impact you made on the organization"
+        "Major project or responsibility in this role"
       ]
     },
     {
@@ -67,9 +63,7 @@ export default function ExperiencePage() {
       role: "Earlier Position",
       period: "2018 - 2020",
       description: [
-        "What you accomplished in this position",
-        "Technologies or methodologies you worked with",
-        "Professional growth and learning experiences"
+        "What you accomplished in this position"
       ]
     }
   ];

@@ -10,23 +10,23 @@ interface ExperienceItemProps {
 
 function ExperienceItem({ company, role, period, description, isLatest }: ExperienceItemProps) {
   return (
-    <div className="relative pl-8 pb-8 border-l-2 border-slate-200 last:pb-0">
+    <div className="relative pl-8 pb-8 border-l-2 border-slate-200 dark:border-slate-600 last:pb-0">
       <div className={`absolute left-[-9px] top-0 w-4 h-4 rounded-full ${
         isLatest ? 'bg-blue-600' : 'bg-slate-400'
       }`}></div>
 
       <div className="space-y-3">
         <div>
-          <h3 className="text-xl font-bold text-slate-900">{role}</h3>
+          <h3 className="text-xl font-bold text-slate-900 dark:text-white">{role}</h3>
           <p className="text-blue-600 font-semibold">{company}</p>
         </div>
 
-        <div className="flex items-center gap-2 text-slate-500 text-sm">
+        <div className="flex items-center gap-2 text-slate-500 dark:text-slate-400 text-sm">
           <Calendar className="w-4 h-4" />
           <span>{period}</span>
         </div>
 
-        <ul className="space-y-2 text-slate-700">
+        <ul className="space-y-2 text-slate-700 dark:text-slate-300">
           {description.map((item, index) => (
             <li key={index} className="flex gap-2">
               <span className="text-blue-600 mt-1">•</span>
@@ -72,12 +72,12 @@ export default function ExperiencePage() {
     <div className="space-y-8">
       <div className="flex items-center gap-3">
         <Briefcase className="w-8 h-8 text-blue-600" />
-        <h1 className="text-4xl font-bold text-slate-900">Experience</h1>
+        <h1 className="text-4xl font-bold text-slate-900 dark:text-white">Experience</h1>
       </div>
 
       <div className="h-1 w-20 bg-blue-600 rounded-full"></div>
 
-      <p className="text-lg text-slate-600">
+      <p className="text-lg text-slate-600 dark:text-slate-400">
         A timeline of my professional journey and key accomplishments.
       </p>
 

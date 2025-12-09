@@ -16,8 +16,8 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
   ];
 
   return (
-    <nav className="bg-white rounded-2xl shadow-xl p-6 sticky top-8">
-      <h2 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-4">
+    <nav className="bg-white dark:bg-slate-800 rounded-2xl shadow-xl dark:shadow-2xl dark:shadow-slate-950/50 p-6 sticky top-8 transition-colors duration-300">
+      <h2 className="text-sm font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-4">
         Navigation
       </h2>
       <ul className="space-y-2">
@@ -32,7 +32,7 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
                 className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 ${
                   isActive
                     ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/30'
-                    : 'text-slate-700 hover:bg-slate-100 hover:text-blue-600'
+                    : 'text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400'
                 }`}
               >
                 <Icon className={`w-5 h-5 ${isActive ? 'text-white' : ''}`} />
